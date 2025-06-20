@@ -77,7 +77,6 @@ public class DiverModel extends GameObject {
 
     }
 
-
     /**
      * A cache value for the fixture (for resizing)
      */

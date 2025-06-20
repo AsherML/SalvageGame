@@ -100,7 +100,7 @@ public class GameController extends ScreenController implements ContactListener 
     /**
      * The amount of time for a physics engine step.
      */
-    public static final float WORLD_STEP = 1 / 60.0f;
+    public static final float WORLD_STEP = 1 / 120.0f;
     /**
      * Number of velocity iterations for the constrain solvers
      */
