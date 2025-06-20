@@ -319,6 +319,10 @@ public class MenuController extends ScreenController implements ControllerListen
         return true;
     }
 
+    public boolean touchCancelled(int screenX, int screenY, int pointer, int button){
+        return false;
+    }
+
     // UNSUPPORTED METHODS FROM ControllerListener
 
     /**

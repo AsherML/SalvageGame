@@ -41,17 +41,19 @@ public class AudioController {
         audio = Audio.init();
         sound_effects_volume = 1.0f;
         music_volume = 1.0f;
-        SoundBuffer heartbeat_wav = WaveLoader.load(Gdx.files.internal("audio/heartbeat.wav"));
-        music = new StreamedSoundSource(Gdx.files.internal("audio/background.ogg"));
-        bubbles = new StreamedSoundSource(Gdx.files.internal("audio/bubbles.ogg"));
-        loading_screen = new StreamedSoundSource(Gdx.files.internal("audio/loading_screen.ogg"));
-        white_noise = new StreamedSoundSource(Gdx.files.internal("audio/white_noise.ogg"));
-        SoundBuffer attack_roar_wav = WaveLoader.load(Gdx.files.internal("audio/attack_roar.wav"));
-        SoundBuffer loud_roar_wav = WaveLoader.load(Gdx.files.internal("audio/loud_roar.wav"));
-        SoundBuffer idle_roar_wav = WaveLoader.load(Gdx.files.internal("audio/higher_growl.wav"));
-        SoundBuffer alarm_wav = WaveLoader.load(Gdx.files.internal("audio/alarm.wav"));
-        SoundBuffer wood_collision_wav = WaveLoader.load(Gdx.files.internal("audio/wood_collision.wav"));
-        SoundBuffer metal_collision_wav = WaveLoader.load(Gdx.files.internal("audio/metal_collision.wav"));
+        SoundBuffer heartbeat_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/heartbeat_clean.wav"));
+        music = new StreamedSoundSource(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/background.ogg"));
+        bubbles = new StreamedSoundSource(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/bubbles.ogg"));
+        loading_screen = new StreamedSoundSource(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/loading_screen.ogg"));
+        white_noise = new StreamedSoundSource(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/white_noise.ogg"));
+
+        SoundBuffer attack_roar_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/attack_roar_clean.wav"));
+        SoundBuffer loud_roar_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/loud_roar_clean.wav"));
+        SoundBuffer idle_roar_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/higher_growl_clean.wav"));
+        SoundBuffer alarm_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/alarm_clean.wav"));
+        SoundBuffer wood_collision_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/wood_collision_clean.wav"));
+        SoundBuffer metal_collision_wav = WaveLoader.load(Gdx.files.absolute("/Users/asherlipman/Documents/Personal Dev Projects/Game Dev/SalvageGame/core/assets/audio/metal_collision_clean.wav"));
+
         alarm = audio.obtainSource(alarm_wav);
         heartbeat = audio.obtainSource(heartbeat_wav);
         idle_roar = audio.obtainSource(idle_roar_wav);

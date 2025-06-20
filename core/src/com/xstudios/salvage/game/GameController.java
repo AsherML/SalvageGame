@@ -1506,6 +1506,10 @@ public class GameController extends ScreenController implements ContactListener 
         return true;
     }
 
+    public boolean touchCancelled(int screenX, int screenY, int pointer, int button){
+        return false;
+    }
+
     /**
      * Called when a key is typed (UNSUPPORTED)
      *

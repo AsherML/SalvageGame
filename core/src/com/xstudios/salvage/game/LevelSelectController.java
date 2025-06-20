@@ -387,6 +387,10 @@ public class LevelSelectController extends ScreenController implements Controlle
         return true;
     }
 
+    public boolean touchCancelled(int screenX, int screenY, int pointer, int button){
+        return false;
+    }
+
     // UNSUPPORTED METHODS FROM ControllerListener
 
     /**
