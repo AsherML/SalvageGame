@@ -330,6 +330,7 @@ public class DiverModel extends GameObject {
         diverCollisionBox = "DiverBox";
         touchingRight = new ArrayList<>();
         touchingLeft = new ArrayList<>();
+
         // Initialize
         faceRight = true;
         setDimension(1.2f, 0.35f);
